@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark text-secondary;
+}
+
+.email-masthead_name {
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: -1px;
+  font-family: 'Montserrat';
+}
+
+.email-masthead_name .hubbard {
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 100;
+  letter-spacing: -1px;
+  font-family: 'Montserrat';
+}
+
+.email-masthead_name .labs {
+  font-weight: 500;
+  color: #3b82f6;
+  font-family: 'Montserrat';
+}
+
+.prose {
+  @apply text-secondary !important;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  @apply text-secondary !important;
+}
+
+.prose code {
+  @apply text-primary !important;
+  @apply bg-dark-lighter !important;
+}
+
+.prose pre {
+  @apply bg-dark-lighter !important;
+}
+
+.prose a {
+  @apply text-primary hover:text-primary-dark !important;
+}
+
+.prose strong {
+  @apply text-secondary !important;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-dark-lighter !important;
+  @apply bg-dark-card !important;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-lighter rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-card;
+}
